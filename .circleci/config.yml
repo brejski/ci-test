@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: ubuntu:16.04
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: apt update && apt-get -y install build-essential git sudo wget cmake
+      - run:
+          name: Build
+          command: cmake . && make
+      - run:
+          name: Run Google Tests
+          command: export GTEST_COLOR=1 && ctest -VV
