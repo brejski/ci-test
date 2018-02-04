@@ -11,4 +11,11 @@ namespace
 
         EXPECT_TRUE(tmp.AlwaysTrue());
     }
+    
+    TEST(ExampleTest, myTest2)
+    {
+        BoolExample tmp;
+
+        EXPECT_FALSE(tmp.AlwaysFalse());
+    }
 }
