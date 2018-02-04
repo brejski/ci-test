@@ -16,6 +16,6 @@ namespace
     {
         BoolExample tmp;
 
-        EXPECT_FALSE(tmp.AlwaysFalse());
+        EXPECT_TRUE(tmp.AlwaysFalse());
     }
 }
