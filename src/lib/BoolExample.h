@@ -9,9 +9,4 @@ public:
     {
         return true;
     }
-    
-    bool AlwaysFalse()
-    {
-        return false;
-    }
 };
